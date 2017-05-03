@@ -2,6 +2,8 @@ mbed Device Connector integration bridge image importer for AWS IoT Device Gatew
 
 Original Date: May 3, 2016
 
+5/3/2017: Updated with the latest bridge.
+
 4/26/2017: Updated with the latest bridge (patches for R1.2 GA)
 
 1/26/2017: Updated with the latest bridge.
