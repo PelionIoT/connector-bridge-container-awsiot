@@ -4,31 +4,27 @@ setup_locale() {
    locale-gen en_US en_US.UTF-8
 }
 
-setup_bridge() 
+setup_connector_bridge() 
 {
     cd /home/arm
     unzip -q ./connector-bridge.zip
     /bin/rm -f ./connector-bridge.zip
-    chown -R arm.arm mds *.sh
-    chmod -R 700 mds *.sh
+    chown -R arm.arm connector-bridge *.sh
+    chmod -R 700 connector-bridge *.sh
+    cd /home/arm
+    ln -s connector-bridge service
 }
 
-setup_configurator()
+setup_properties_editor()
 {
    cd /home/arm
-   /bin/rm -rf configurator 2>&1 1> /dev/null
-   unzip -q ./configurator-1.0.zip
-   /bin/rm -f ./configurator-1.0.zip
-   chown -R arm.arm configurator
-   chmod -R 700 configurator
-   cd configurator/conf
-   if [ -f deviceserver.properties ]; then
-       rm deviceserver.properties 2>&1 1> /dev/null
-   fi
-   if [ -f gateway.properties ]; then
-       rm gateway.properties 2>&1 1> /dev/null
-   fi
-   ln -s ../../mds/connector-bridge/conf/gateway.properties .
+   /bin/rm -rf properties-editor 2>&1 1> /dev/null
+   unzip -q ./properties-editor-1.0.zip
+   /bin/rm -f ./properties-editor-1.0.zip
+   chown -R arm.arm properties-editor
+   chmod -R 700 properties-editor
+   cd properties-editor/conf
+   ln -s ../../connector-bridge/conf/service.properties .
    cd ../..
 }
 
@@ -50,7 +46,7 @@ setup_aws_cli() {
     chown -R arm.arm .aws
     chmod 755 .aws
     chmod 600 .aws/*
-    cd /home/arm/mds/connector-bridge
+    cd /home/arm/connector-bridge
     ln -s /usr/local/bin/aws .
     cd /home/arm
 }
@@ -68,13 +64,7 @@ setup_sudoers()
 }
 
 setup_java() {
-    # update-alternatives --set java /usr/lib/jvm/java-8-oracle/jre/bin/java
-    # update-alternatives --set java /usr/lib/jvm/java-7-oracle/jre/bin/java
-    echo "Using OpenJDK 7 JRE..."
-}
-
-setup_crontab() {
-    su -l arm -s /bin/bash -c "crontab /home/arm/crontab"
+    echo "Using defaulted JRE..."
 }
 
 cleanup()
@@ -85,14 +75,13 @@ cleanup()
 main() 
 {
     setup_locale
-    setup_bridge
-    setup_configurator
-    setup_ssh
-    setup_aws_cli
     setup_passwords
     setup_sudoers
+    setup_ssh
     setup_java
-    setup_crontab
+    setup_aws_cli
+    setup_properties_editor
+    setup_connector_bridge
     cleanup
 }
 
