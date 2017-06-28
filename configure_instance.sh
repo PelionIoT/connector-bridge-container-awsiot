@@ -19,8 +19,8 @@ setup_properties_editor()
 {
    cd /home/arm
    /bin/rm -rf properties-editor 2>&1 1> /dev/null
-   unzip -q ./properties-editor-1.0.zip
-   /bin/rm -f ./properties-editor-1.0.zip
+   unzip -q ./properties-editor.zip
+   /bin/rm -f ./properties-editor.zip
    chown -R arm.arm properties-editor
    chmod -R 700 properties-editor
    cd properties-editor/conf
