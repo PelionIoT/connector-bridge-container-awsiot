@@ -1,5 +1,7 @@
 mbed Device Connector integration bridge image importer for AWS IoT Device Gateway 
 
+6/29/2017: property editor updates 
+
 6/27/2017: Minor updates
 
 6/20/2017: Cleanups, updates to properties editor and overall structure 
