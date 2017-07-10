@@ -11,6 +11,8 @@ setup_connector_bridge()
     /bin/rm -f ./connector-bridge.zip
     chown -R arm.arm connector-bridge *.sh
     chmod -R 700 connector-bridge *.sh
+    cd connector-bridge/target
+    ln -s ../../aws .
     cd /home/arm
     ln -s connector-bridge service
 }
@@ -46,7 +48,7 @@ setup_aws_cli() {
     chown -R arm.arm .aws
     chmod 755 .aws
     chmod 600 .aws/*
-    cd /home/arm/connector-bridge
+    cd /home/arm/connector-bridge/target
     ln -s /usr/local/bin/aws .
     cd /home/arm
 }
