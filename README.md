@@ -1,5 +1,7 @@
 mbed Device Connector integration bridge image importer for AWS IoT Device Gateway 
 
+7/10/2017: minor fix in location of the default keytore.jks file
+
 6/29/2017: property editor updates 
 
 6/27/2017: Minor updates
