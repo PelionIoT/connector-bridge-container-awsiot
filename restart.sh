@@ -2,5 +2,5 @@
 
 cd connector-bridge
 ./killService.sh
-./runService.sh
+./runService.sh &
 cd ${HOME}
