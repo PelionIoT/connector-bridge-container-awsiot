@@ -1,5 +1,7 @@
 mbed Device Connector integration bridge image importer for AWS IoT Device Gateway 
 
+02/09/2018: updated bridge - fixes for GET CoAP processing requests
+
 01/18/2018: updated bridge - matched semantics of device removal with mbed Cloud API 
 
 01/17/2018: updated bridge - Google API updates and fixes for latest mbed Cloud API
