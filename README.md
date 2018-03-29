@@ -1,5 +1,9 @@
 mbed Device Connector/mbed Cloud integration bridge for Amazon AWS IoT
 
+03/29/2018: updated bridge - TLV parser, misc fixes
+
+03/25/2018: bridge MQTT configuration tweaks
+
 03/24/2018: updated bridge - Google JwT fixes
 
 03/22/2018: updated bridge - New Google integration functional now. Additional minor bridge updates.
