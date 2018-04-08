@@ -1,5 +1,7 @@
 mbed Device Connector/mbed Cloud integration bridge for Amazon AWS IoT
 
+04/07/2018: updated bridge - significant refactoring of all supported bridge MQTT handlers
+
 04/06/2018: updated bridge - MQTT reconnect fixes
 
 04/04/2018: updated bridge - MQTT ack fixes
