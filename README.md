@@ -1,5 +1,7 @@
 mbed Device Connector/mbed Cloud integration bridge for Amazon AWS IoT
 
+05/04/2018: updated bridge - yet more fixes for device shadow deletion recovery
+
 05/02/2018: updated bridge - more polish on MQTT recovery
 
 05/01/2018: updated bridge - Shadow deletion and MQTT abrupt disconnect recovery.
