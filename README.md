@@ -1,5 +1,7 @@
 mbed Device Connector/mbed Cloud integration bridge for Amazon AWS IoT
 
+05/30/2018: updated bridge - more keystore enhancements
+
 05/29/2018: updated bridge - keystore fixes
 
 05/13/2018: updated bridge - more lifecycle updates. Hopefully final... :-) 
