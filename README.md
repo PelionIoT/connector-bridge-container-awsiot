@@ -1,4 +1,4 @@
-mbed Device Connector/mbed Cloud integration bridge for Amazon AWS IoT
+mbed Device Connector/mbed Cloud integration bridge for Amazon AWS IoT 
 
 07/19/2018: updated bridge - fixed major bug in use of long polling with initial device discovery. 
 
