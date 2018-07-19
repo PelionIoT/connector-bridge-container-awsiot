@@ -1,5 +1,7 @@
 mbed Device Connector/mbed Cloud integration bridge for Amazon AWS IoT
 
+07/19/2018: updated bridge - fixed major bug in use of long polling with initial device discovery. 
+
 06/21/2018: updated bridge - minor update for Google
 
 06/20/2018: updated bridge - major update: support for piggybacking authenticated API calls over the device connection. Additional stability updates and fixes.
