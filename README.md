@@ -1,5 +1,7 @@
 mbed Device Connector/mbed Cloud integration bridge for Amazon AWS IoT 
 
+07/31/2018: updated bridge - added optional caller_id to the API call passthu
+
 07/30/2018: updated bridge - significant updates for API passthru calling
 
 07/26/2018: updated properties-editor scripts
