@@ -1,5 +1,7 @@
 mbed Device Connector/mbed Cloud integration bridge for Amazon AWS IoT 
 
+08/18/2018: updated bridge - enabled retain for MS IoTHub
+
 07/31/2018: updated bridge - added optional caller_id to the API call passthu
 
 07/30/2018: updated bridge - significant updates for API passthru calling
