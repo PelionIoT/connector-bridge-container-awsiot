@@ -1,5 +1,7 @@
 arm PELION Device Shadow bridge for Amazon AWS IoT 
  
+08/22/2018: updated bridge - better handling of unconfigured API Key
+
 08/21/2018: updated bridge, properties editor, configuration file structure
 
 08/20/2018: updated bridge and properties editor
