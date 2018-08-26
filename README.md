@@ -1,6 +1,8 @@
 arm PELION Device Shadow bridge for Amazon AWS IoT 
  
-08/24/2018: uddated bridge - regressed bulk subscription fix
+08/26/2018: updated bridge - fixes for proper reset recovery
+
+08/24/2018: updated bridge - regressed bulk subscription fix
 
 08/23/2018: updated bridge - improved MQTT abrupt disconnect handling + bulk subscriptions reset
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd connector-bridge
+cd ${HOME}/service
 ./killService.sh
 ./runService.sh &
 cd ${HOME}
